@@ -1,0 +1,9 @@
+var code = document.getElementById("code_area").value;
+ 	
+	//first we split the code into "statements" aka instructions followed by ";"
+	var statement_pattern = /([^;]+?)\s*\(-_-\)/gm;
+	//first we split the code into "statements" aka instructions followed by "(-_-)"
+	var statement_pattern = /(.+?)\s*\(-_-\)/gm;
+ 	while(statement = statement_pattern.exec(code)) {
+ 	
+ 		
